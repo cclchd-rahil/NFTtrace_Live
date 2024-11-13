@@ -13,9 +13,8 @@ def test_valid_login(driver):
     login_page.enter_email("superadmin@chaincodeconsulting.com")
     login_page.enter_password("admin@123")
     login_page.click_login()
-    time.sleep(1)
 
-    expected_title = "NFTtrace - Projects"
+    expected_title = "NFTtrace - Login to Manage and Track Your NFTs with Ease"
     assert driver.title == expected_title, f"Expected title '{expected_title}', but got '{driver.title}'"
 
 
